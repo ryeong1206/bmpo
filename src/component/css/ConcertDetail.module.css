@@ -1,0 +1,296 @@
+/* 모달 배경 */
+.modalBackground{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* 예약 모달 */
+.reservationModal{
+    width: 780px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+    .modalClose{
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0;
+        background-color: inherit;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .reservationModal .modalContents{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .modalTitle{
+        width: 100%;
+        font-size: 1.25rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+    }
+
+
+    /* 예약 모달 좌석맵 */
+    .reservationModal  .seatMap{
+        width: 65%;
+        border: 1px solid #666666;
+        padding: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+        .reservationModal .seatMap .stage{
+            width: 20rem;
+            height: 4rem;
+            text-align: center;
+            line-height: 4rem;
+            background-color: #ccc;
+            border: 1px solid #999;
+        }
+        .reservationModal .seatMap .seatContainer{
+            width: 100%;
+        }
+        .reservationModal .seatMap .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        .reservationModal .seatMap .seat{
+            width: 1rem;
+            height: 1rem;
+            margin-bottom: 0.25rem;
+            border: 0;
+        }
+        .reservationModal .seatMap .seat.selected {
+            background-color: #eee !important;
+            border: 1px solid #000;
+        }
+
+    /* 예약 모달 선택 좌석 정보 */
+    .reservationModal .right{
+        width: 32%;
+    }
+    .reservationModal .right li{
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .reservationModal .right li > p{
+        border: 1px solid #666666;
+        box-sizing: border-box;
+        min-height: 5rem;
+        padding: 1rem;
+        margin-top: 0.75rem;
+    }
+        .reservationModal .right .seatGuid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .reservationModal .right .seatGuid p{
+            margin-bottom: 0.25rem;
+        }
+        .reservationModal .right .seatColor{
+            width: 1rem;
+            height: 1rem;
+            display: block;
+        }
+        .reservationModal .right .seatLevel{
+            width: 40%;
+        }
+        .reservationModal .right .seatPrice{
+            width: 1;
+            text-align: right;
+        }
+
+        .reservationModal .right .seatReset{
+            background-color: inherit;
+            border: 0;
+        }
+        
+        .reservationModal .right .complete{
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.25rem;
+            color: #ffffff;
+            background-color: #000000;
+            border: 0;
+        }
+        .reservationModal .right .complete:disabled{
+            background-color: #eee;
+            color: #ccc;
+        }
+
+/* 예약 완료 모달 */
+.completeModal{
+    width: 780px;
+    min-height: 320px;
+    height: 20rem;
+    /* padding: 1.5rem; */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+    .completeModal .modalContents{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .completeModal .modalContents div{
+
+    }
+    .completeModal p{
+        display: block;
+        width: 100%;
+    }
+    .completeModal .confirm{
+        width: 100%;
+        height:  5rem;
+        border: 0;
+        border-top: 1px solid #000;
+        background-color: #ffffff;
+    }
+
+
+/* section1 */
+.section1{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+.section1 button{
+    box-sizing: border-box;
+}
+
+/* 콘서트정보 */
+    .concert{
+        width: 66%;
+        margin-right: 1.5rem;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+        /* 공연제목 */
+        .concert h3{
+            width: 100%;
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        /* 포스터 */
+        .concert .poster{
+            width: 36%;
+            margin-right: 1.5rem;
+            position: relative;
+        }
+        .concert .poster img{
+            width: 100%;
+            height: 456px;
+            object-fit: cover;
+        }
+        .concert .poster .dday{
+            width: 3.25rem;
+            height: 3.25rem;
+            border-radius: 50%;
+            margin: 1rem;
+            position: absolute;
+            top: 0;
+            background-color: #6557DF;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.75rem;
+            text-align: center;
+            line-height: 3.25rem;
+        }
+        /* 공연정보 */
+        .concert ul {
+            flex: 1;
+        }
+        .concert li {
+            display: flex;
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .concert li::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            background-color: #000000;
+        }
+        .concert li p:first-child{
+            min-width: 4.5rem;
+            margin-right: 1rem;
+            font-weight: 400;
+        }
+        .concert li .higlig{
+            color: #6557DF;
+        }
+
+
+    /* 캘린더 */
+    .calendar{
+        flex: 1;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .calendar h2{
+        width: 100%;
+        height: 622px;
+        background-color: aquamarine;
+        margin-bottom: 1.5rem;
+    }
+    .calendar button{
+        flex: 1;
+        min-width: 47%;
+        height: 56px;
+        font-size: 1.25rem;
+    }
+    .calendar .bookmark{
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.5rem;
+        border: 1px solid #000000;
+    }
+    .calendar .reserve{
+        background-color: #000000;
+        color: #ffffff;
+        border: 0;
+    }
+    .calendar .reserve:disabled{
+        background-color: #eee;
+        color: #ccc;
+    }
+
+
+
+
+
+
+/* section2 */
+.section2 img{
+    width: 100%;
+}
+
+
