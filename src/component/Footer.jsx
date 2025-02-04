@@ -1,3 +1,4 @@
+// 원본
 import React from "react";
 import styles from './css/Footer.module.css'
 import '../App.css';
@@ -8,7 +9,7 @@ function Footer() {
             <div className={styles.footer_in}>
                 <div className={styles.top}>
                     <div className={styles.left}>
-                        <p><img src="/images/logo.svg" alt="" /></p>
+                        <p><img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="logo" /></p>
                         <ul>
                             <li>(사)부산메트로폴리탄필하모닉오케스트라</li>
                             <li>(48511) 부산광역시 남구 용소로7번길 64, 지하 (대연동)</li>
@@ -28,10 +29,10 @@ function Footer() {
                 </div>
                 <p className={styles.line}></p>
                 <div className={styles.bottom}>
-                        <p><img src="/images/footer_sponser_01.png" alt="" /></p>
-                        <p><img src="/images/footer_sponser_02.png" alt="" /></p>
-                        <p><img src="/images/footer_sponser_03.png" alt="" /></p>
-                        <p><img src="/images/footer_sponser_04.png" alt="" /></p>
+                    <p><img src={`${process.env.PUBLIC_URL}/images/footer_sponser_01.png`} alt="familySite" /></p>
+                    <p><img src={`${process.env.PUBLIC_URL}/images/footer_sponser_02.png`} alt="familySite" /></p>
+                    <p><img src={`${process.env.PUBLIC_URL}/images/footer_sponser_03.png`} alt="familySite" /></p>
+                    <p><img src={`${process.env.PUBLIC_URL}/images/footer_sponser_04.png`} alt="familySite" /></p>
                 </div>
             </div>
         </header>

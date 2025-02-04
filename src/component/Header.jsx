@@ -1,3 +1,4 @@
+// 원본
 import React from "react";
 import styles from './css/Header.module.css'
 import '../App.css';
@@ -9,7 +10,7 @@ function Header() {
         <header className={styles.header}>
             <div className={styles.header_in}>
                 <div className={styles.logo}>
-                    <Link to='/'><img src="/images/logo.svg" alt="" /></Link>
+                    <Link to='/'><img src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="" /></Link>
                 </div>
 
                 <div className={styles.nav}>

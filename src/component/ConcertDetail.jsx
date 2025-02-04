@@ -1,4 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+// 원본
+
+import React, { useEffect, useState } from "react";
 import styles from './css/ConcertDetail.module.css';
 import { useParams } from "react-router-dom";
 import { BmpoState, ProDispatch, calculateDday, toggleBookmark  } from "../BmpoContext";
@@ -243,7 +245,7 @@ function ConcertDetail() {
                         <h3>{data.title}</h3>
                         <div className={styles.poster}>
                             <p className={styles.dday}>{calculateDday(data.performancedatef.start)}</p>
-                            <img src={data.poster}/>
+                            <img src={data.poster} alt="poster"/>
                         </div>
                         <ul>
                             <li>
@@ -304,7 +306,7 @@ function ConcertDetail() {
                 {/* 2) 상세정보 이미지지 */}
                 <h3 className="subTitle"><p></p>상세정보</h3>
                 <div className={styles.section2}>
-                    <img src={data.infoimg}/>
+                    <img src={data.infoimg} alt="infoimage"/>
                     <div>
                     </div>
                 </div>
