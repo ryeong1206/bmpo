@@ -129,7 +129,6 @@ function ConcertList({CData}) {
         }
         setFilteredConcerts(sorted);
     };
-    
 
     // 검색결과 없을 때 화면
     function noResults() {
