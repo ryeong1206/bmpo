@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bmpo/static/css/main.9dd63466.css",
-    "main.js": "/bmpo/static/js/main.092dcd9c.js",
+    "main.js": "/bmpo/static/js/main.6ccc5098.js",
     "index.html": "/bmpo/index.html",
     "main.9dd63466.css.map": "/bmpo/static/css/main.9dd63466.css.map",
-    "main.092dcd9c.js.map": "/bmpo/static/js/main.092dcd9c.js.map"
+    "main.6ccc5098.js.map": "/bmpo/static/js/main.6ccc5098.js.map"
   },
   "entrypoints": [
     "static/css/main.9dd63466.css",
-    "static/js/main.092dcd9c.js"
+    "static/js/main.6ccc5098.js"
   ]
 }
