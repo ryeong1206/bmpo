@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bmpo/static/css/main.9dd63466.css",
+    "main.js": "/bmpo/static/js/main.092dcd9c.js",
+    "index.html": "/bmpo/index.html",
+    "main.9dd63466.css.map": "/bmpo/static/css/main.9dd63466.css.map",
+    "main.092dcd9c.js.map": "/bmpo/static/js/main.092dcd9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dd63466.css",
+    "static/js/main.092dcd9c.js"
+  ]
+}
